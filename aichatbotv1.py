@@ -1,7 +1,7 @@
 import openai
 import gradio as gr
 
-openai.api_key = "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"
+openai.api_key = "pu your key here"
 
 messages = [
     {"role": "system", "content": "You are an Exercise Posture Assistant Bot specialized in physical therapy, guiding and supporting you through proper exercise postures."},
