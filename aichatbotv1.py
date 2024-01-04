@@ -1,7 +1,7 @@
 import openai
 import gradio as gr
 
-openai.api_key = "your openai key"
+openai.api_key = "open AI api_key"
 
 messages = [
     {"role": "system", "content": "You are an Exercise Posture Assistant Bot specialized in physical therapy, guiding and supporting you through proper exercise postures."},
@@ -19,7 +19,7 @@ def chatbot(input):
 
 iface = gr.Interface(fn=chatbot, inputs=gr.Textbox(lines=7, label="Chat with Physio AI"), 
                      outputs=gr.Textbox(label="Reply"), 
-                     title="AI Chatbot",
-                     description="Ask anything you want",
+                     title="Physio AI Chatbot",
+                     description="Ask anything about physical therapy or exercises",
                      theme="compact")
 iface.launch(share=True)
